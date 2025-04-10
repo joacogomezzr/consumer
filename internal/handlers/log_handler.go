@@ -32,7 +32,7 @@ func HandleMessageAndSend(message []byte) {
 }
 
 func sendToRecommendationsAPI(bookID int64) {
-	apiURL := "http://127.0.0.1:4000/v1/recomendaciones/"
+	apiURL := "http://44.197.18.81:4000/v1/recomendaciones/"
 	payload := map[string]int64{"idBook": bookID}
 	body, err := json.Marshal(payload)
 	if err != nil {
